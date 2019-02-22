@@ -37,7 +37,7 @@ for i in range(0, 5):
     # loop for stemming each word 
     # in string array at ith row     
     review = [ps.stem(word) for word in review 
-                if not word in set(stopwords.words('english'))]  
+                if not word in set(nltk.corpus.stopwords.words('english'))]  
                   
     # append each string to create 
     # array of clean text  
